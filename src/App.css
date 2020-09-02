@@ -2,37 +2,131 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logout-button {
+  margin-left: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.list-card {
+  margin: 24px !important;
+}
+
+.home-list-details{
+  display: block !important;
+}
+
+.add-button {
+  position: fixed !important;
+  right: 20px;
+  bottom: 20px;
+}
+
+.login-page {
+  height: 100vh;
+  display: grid;
+  background: #2196f3;
+  background: -webkit-linear-gradient(315deg, #6ec6ff, #003f8f);
+  background: -o-linear-gradient(315deg, #6ec6ff, #003f8f);
+  background: linear-gradient(135deg, #6ec6ff, #003f8f);
+}
+
+.login-button {
+  margin: auto;
+}
+
+.login-title{
+  font-size: 50px;
+}
+
+.login-page-inner{
+  margin: auto;
+}
+
+.session-list {
+  height: calc(100vh - 180px);
+  overflow-y: auto;
+}
+
+.input-item {
+  width: calc(100% - 100px);
+  margin-right: 10px;
+}
+
+.session-list-page{
+  padding: 12px;
+}
+
+.retro-list-header{
+  -ms-flex: auto;
+      flex: auto;
+}
+
+.MuiTab-root-247{
+  max-width: none !important;
+}
+.loader{
+    font-size: 40px;
+    display: inline-block;
+    -webkit-animation: spin 1s infinite linear;
+            animation: spin 1s infinite linear;
+    font-style: normal;
+  }
+
+  @-webkit-keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+.session-list-text {
+    max-width: calc(100% - 150px) !important;
+    overflow-wrap: break-word;
+}
+.test{
+  padding-bottom: 10px !important;
+}
+
+@media only screen and (min-width: 1047px) {
+  .session-list-page{
+    padding: 0px;
+  }
+
+  .session-list {
+    height: calc(100vh - 220px);
+    overflow-x: hidden;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.chip-margin{
+  margin-right: 5px ;
 }
 
-.App-link {
-  color: #61dafb;
+.retro-search{
+  float: left;
+  margin: 0 16px;
+  z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.assign-dropdown{
+  position: absolute;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 600px) {
+  .chip-display{
+    display: inline-block !important;
   }
-  to {
-    transform: rotate(360deg);
+  .chip-padding{
+    padding-bottom: 10px !important;
+  }
+  .list-card {
+    margin: 8px !important;
   }
 }
